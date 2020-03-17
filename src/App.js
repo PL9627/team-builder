@@ -3,10 +3,11 @@ import logo from './logo.svg';
 import './App.css';
 
 function App() {
-  const [teamState, setTeamState] = useState([{
-    firstName: '',
-    lastName: '',
-    teamType: ""
+  const [teamState, setTeamState] = useState([
+    {
+    name: "",
+    email: "",
+    role: ""
   }]);
 
   return (
