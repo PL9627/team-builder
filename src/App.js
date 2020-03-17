@@ -3,7 +3,11 @@ import logo from './logo.svg';
 import './App.css';
 
 function App() {
-  const [noteState, setNoteState] = useState([]);
+  const [teamState, setTeamState] = useState([{
+    firstName: '',
+    lastName: '',
+    teamType: ""
+  }]);
 
   return (
     <div className="App">
