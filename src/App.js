@@ -10,6 +10,10 @@ function App() {
     role: ""
   }]);
 
+  const addTeamMember = newTeamMember => {
+    setTeamMember([...teamMember, newTeamMember]);
+  };
+
   return (
     <div className="App">
       

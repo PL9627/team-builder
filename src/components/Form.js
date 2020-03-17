@@ -9,5 +9,27 @@ const Form = props => {
         role: ""
     }]);
 
+    const changeHandler = event = {
+        setTeamMember({
+            ...teamMember,
+            [event.target.name]: event.target.value
+        });
+    };
+
+    const teamSubmitHandler = event => {
+        event.preventDefault();
+
+        props.newTeamMember({
+            ...teamMember, 
+            id: Date.now();
+        });
+
+        setTeamMember({
+            name: "",
+            email: "",
+            role: ""
+        });
+    }
+
     return();
 }
