@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import Members from './Members';
 
 const Form = props => {
     const [teamMember, setTeamMember] = useState([
@@ -34,11 +33,27 @@ const Form = props => {
     return(
         <form onSubmit = {teamSubmitHandler}>
             <label htmlFor = "name">Name:</label>
-            <input />
+            <input 
+                type = 'text'
+                name = 'name'
+                value = {teamMember.name}
+                onChange = {changeHandler}
+                placeholder = 'Type name here' />
             <label htmlFor = "email">Email:</label>
-            <input />
+            <input 
+                type = 'text'
+                name = 'email'
+                value = {teamMember.email}
+                onChange = {changeHandler}
+                placeholder = 'Type email here' />
             <label htmlFor = "role">Role: </label>
-            <input />
+            <input 
+                type = 'text'
+                name = 'role'
+                value = {teamMember.role}
+                onChange = {changeHandler}
+                placeholder = 'Type role here' />
+            <button type = 'submit'>Create New Team Member</button>
         </form>
     );
-}
+};
