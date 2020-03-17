@@ -29,7 +29,7 @@ const Form = props => {
             email: "",
             role: ""
         });
-    }
+    };
 
     return();
 }
