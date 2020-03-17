@@ -5,9 +5,9 @@ import './App.css';
 function App() {
   const [teamMember, setTeamMember] = useState([
     {
-    name: "Paul",
-    email: "paul96@hotmail.com",
-    role: "team member"
+    name: "",
+    email: "",
+    role: ""
   }]);
 
   return (
