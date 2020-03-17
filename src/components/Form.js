@@ -31,5 +31,14 @@ const Form = props => {
         });
     };
 
-    return();
+    return(
+        <form onSubmit = {teamSubmitHandler}>
+            <label htmlFor = "name">Name:</label>
+            <input />
+            <label htmlFor = "email">Email:</label>
+            <input />
+            <label htmlFor = "role">Role: </label>
+            <input />
+        </form>
+    );
 }
