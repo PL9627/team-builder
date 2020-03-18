@@ -8,9 +8,9 @@ const Form = props => {
         role: ""
     }]);
 
-    const changeHandler = event = {
-        setTeamMember({
-            ...teamMember,
+    const changeHandler = event => {
+        setTeamMember({ 
+            ...teamMember, 
             [event.target.name]: event.target.value
         });
     };
@@ -20,7 +20,7 @@ const Form = props => {
 
         props.newTeamMember({
             ...teamMember, 
-            id: Date.now();
+            id: Date.now()
         });
 
         setTeamMember({
@@ -57,3 +57,5 @@ const Form = props => {
         </form>
     );
 };
+
+export default Form;
